@@ -101,11 +101,9 @@ ipython_config.py
 #uv.lock
 
 # poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
+#   É RECOMENDADO manter o poetry.lock no controle de versão para garantir a consistência das dependências.
 #   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-#poetry.lock
+#poetry.lock   <-- Removido para garantir o versionamento correto do arquivo
 
 # pdm
 #   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
@@ -129,7 +127,7 @@ celerybeat.pid
 
 # Environments
 .env
-.venv
+.venv/       # Ambiente virtual do Poetry (quando in-project)
 env/
 venv/
 ENV/
